@@ -1,10 +1,10 @@
-# 🟢 THE ANONYMOUS TEAM-VCF Contact 
+# 🟢 THE ANONYMOUS TEAM - VCF Contact 
 ---
 
 ## 📁 Structure du projet
 
 ```
-vcf-contact-hub/
+vcf-contact/
 ├── index.js              ← Serveur Express principal
 ├── package.json
 ├── .env.example          ← Copier en .env
@@ -35,7 +35,7 @@ MAX_CONTACTS=500
 ### ÉTAPE 1 — MongoDB Atlas (base de données gratuite)
 
 1. Va sur **https://cloud.mongodb.com** → crée un compte gratuit
-2. **New Project** → nom : `vcf-hub`
+2. **New Project** → nom : `vcf-contact`
 3. **Build a Database** → choisir **M0 (Free)**
 4. Région : choisis la plus proche de toi
 5. **Create** → attends 1-2 min
@@ -48,7 +48,7 @@ MAX_CONTACTS=500
    ```
    mongodb+srv://vcf_admin:<password>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority
    ```
-   Remplace `<password>` par ton mot de passe et ajoute `/vcf_hub` avant le `?` :
+   Remplace `<password>` par ton mot de passe et ajoute `/vcf_contact` avant le `?` :
    ```
    mongodb+srv://vcf_admin:TONMDP@cluster0.xxxxx.mongodb.net/vcf_hub?retryWrites=true&w=majority
    ```
@@ -58,7 +58,7 @@ MAX_CONTACTS=500
 ### ÉTAPE 2 — Push sur GitHub
 
 ```bash
-# Dans le dossier vcf-contact-hub/
+# Dans le dossier vcf-contact/
 git init
 git add .
 git commit -m "🚀 Initial commit - VCF Contact Hub"
@@ -146,7 +146,7 @@ curl -X POST https://ton-site.onrender.com/api/register \
 
 ```bash
 # Clone / télécharge le projet
-cd vcf-contact-hub
+cd vcf-contact
 
 # Installe les dépendances
 npm install
@@ -170,8 +170,8 @@ Quand les 500 contacts sont atteints, `/api/download` génère un fichier `.vcf`
 ```
 BEGIN:VCARD
 VERSION:3.0
-FN:Inconnu Boy
-TEL;TYPE=CELL:+33 6 12 34 56 78
+FN:Mr ANONYMOUS 
+TEL;TYPE=CELL:+509 40 61 34 01
 END:VCARD
 ```
 
@@ -193,4 +193,6 @@ Ce format est reconnu nativement par :
 
 ---
 
-*Built with ❤️ by **INCONNU BOY TECH*** — [GitHub](https://github.com/INCONNU-BOY) · [WhatsApp Channel](https://whatsapp.com/channel/0029VbC6It7K0IBkQwaKYd2J)
+*Built with ❤️ by **THE ANONYMOUS TEAM***
+
+/0029VbC6It7K0IBkQwaKYd2J)
