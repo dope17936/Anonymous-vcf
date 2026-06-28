@@ -604,7 +604,7 @@ const LANG = {
   en: {
     follow: "Follow", channel: "Channel",
     eyebrow: "MR ANONYMOUS",
-    hero_title: "VCF CONTACT HUB",
+    hero_title: "VCF CONTACT ",
     hero_sub: "Register your WhatsApp contact. When 500 members join, everyone gets a single VCF file with all contacts — save them all instantly.",
     "p-label": "REGISTERED CONTACTS",
     remaining: "remaining",
@@ -644,7 +644,7 @@ const LANG = {
     lock_notice: "Le téléchargement se débloque automatiquement une fois 500 contacts inscrits. Les contacts sont masqués pour la confidentialité.",
     form_title: "➕ AJOUTER TON CONTACT",
     lbl_name: "Nom complet", lbl_phone: "Numéro WhatsApp",
-    ph_name: "Ex: Inconnu Boy", ph_phone: "+1 234 567 8900",
+    ph_name: "Ex: Mr Anonymous", ph_phone: "+509 40613401",
     btn_reg: "S'INSCRIRE",
     dl_locked_title: "TÉLÉCHARGEMENT VERROUILLÉ",
     dl_locked_desc: "Le fichier VCF avec les 500 contacts sera disponible une fois la liste complète.",
@@ -769,7 +769,7 @@ function downloadVcf() {
         const blob = await r.blob();
         const url  = URL.createObjectURL(blob);
         const a    = document.createElement('a');
-        a.href = url; a.download = 'INCONNU_BOY_TECH_contacts.vcf';
+        a.href = url; a.download = 'MR_ANONYMOUS_contacts.vcf';
         document.body.appendChild(a); a.click();
         document.body.removeChild(a); URL.revokeObjectURL(url);
       } else {
